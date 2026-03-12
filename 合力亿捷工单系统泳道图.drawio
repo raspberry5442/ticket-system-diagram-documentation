@@ -1,0 +1,183 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="第 1 页" id="6XPgRU5x_oNktrX6Lxvw">
+    <mxGraphModel dx="1871" dy="1037" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane1" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="客户 / 提单方" vertex="1">
+          <mxGeometry height="150" width="1510" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n1_start" parent="lane1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="开始" vertex="1">
+          <mxGeometry height="40" width="60" x="60" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="n1_create" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;" value="自助发起工单&#xa;(APP/扫码/微信)" vertex="1">
+          <mxGeometry height="60" width="110" x="160" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n1_sign" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;" value="现场验收签名&#xa;&amp; 缴费" vertex="1">
+          <mxGeometry height="60" width="110" x="1098" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n1_eval" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;" value="满意度评价" vertex="1">
+          <mxGeometry height="60" width="100" x="1248" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n1_end" parent="lane1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="结束" vertex="1">
+          <mxGeometry height="40" width="60" x="1368" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="lane1" source="n1_start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n1_create">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="lane1" source="n1_sign" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n1_eval">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="客服 / 调度中心" vertex="1">
+          <mxGeometry height="150" width="1510" x="40" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n2_dispatch" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="人工地图派单&#xa;或转入工单池" vertex="1">
+          <mxGeometry height="60" width="110" x="498" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n2_create" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="电话/在线渠道&#xa;人工创建工单" vertex="1">
+          <mxGeometry height="60" width="110" x="160" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" value="工程师 / 处理人" vertex="1">
+          <mxGeometry height="200" width="1510" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="n3_receive" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;" value="接收工单或&#xa;从工单池抢单" vertex="1">
+          <mxGeometry height="60" width="110" x="498" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3_checkin" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;" value="到达现场&#xa;GPS定位打卡" vertex="1">
+          <mxGeometry height="60" width="100" x="648" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3_process" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;" value="诊断并处理问题" vertex="1">
+          <mxGeometry height="60" width="100" x="788" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3_need_parts" parent="lane3" style="rhombus;whiteSpace=wrap;html=1;" value="是否需要&#xa;更换备件？" vertex="1">
+          <mxGeometry height="80" width="90" x="918" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n3_receipt" parent="lane3" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="录入处理回执&#xa;提交完工确认" vertex="1">
+          <mxGeometry height="70" width="110" x="1098" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="lane3" source="n3_receive" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n3_checkin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="lane3" source="n3_checkin" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n3_process">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="lane3" source="n3_process" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n3_need_parts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="lane3" source="n3_need_parts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n3_receipt" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane4" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="仓储 / 财务人员" vertex="1">
+          <mxGeometry height="150" width="1510" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n4_parts" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;" value="备件出库审核&#xa;&amp; 资产调拨" vertex="1">
+          <mxGeometry height="60" width="110" x="908" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n4_finance" parent="lane4" style="rounded=1;whiteSpace=wrap;html=1;" value="核销费用凭证" vertex="1">
+          <mxGeometry height="60" width="110" x="1168" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="lane5" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;swimlaneFillColor=none;" value="系统 / 规则引擎" vertex="1">
+          <mxGeometry height="180" width="1510" x="40" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="n5_pool" parent="lane5" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="生成统一格式工单&#xa;(关联客户/资产库)" vertex="1">
+          <mxGeometry height="70" width="110" x="160" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n5_autorule" parent="lane5" style="rhombus;whiteSpace=wrap;html=1;" value="满足自动&#xa;派单规则？" vertex="1">
+          <mxGeometry height="80" width="90" x="310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n5_sla_start" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;" value="启动SLA监控&#xa;多重消息提醒" vertex="1">
+          <mxGeometry height="60" width="110" x="498" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n5_sla_check" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;" value="SLA超时预警&#xa;(弹窗/告警)" vertex="1">
+          <mxGeometry height="60" width="110" x="643" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n5_archive" parent="lane5" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="记录历史时间轴&#xa;报表归档统计" vertex="1">
+          <mxGeometry height="70" width="110" x="1243" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="lane5" source="n5_pool" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n5_autorule">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="lane5" source="n5_autorule" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n5_sla_start" value="是(就近/技能)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="n1_start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n2_create">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="115" />
+              <mxPoint x="130" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="n2_create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n5_pool">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="n2_create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n5_pool">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="n5_autorule" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n2_dispatch" value="否/需干预">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="770" />
+              <mxPoint x="395" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="n2_dispatch" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n3_receive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="n5_sla_start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="n3_receive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="n3_checkin" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="n5_sla_check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="n5_sla_check" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;dashed=1;" target="n3_checkin" value="未打卡提醒">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="818" y="770" />
+              <mxPoint x="818" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="n3_need_parts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n4_parts" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="n4_parts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n3_receipt">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1003" y="600" />
+              <mxPoint x="1153" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="n3_receipt" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n1_sign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="n1_sign" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="n4_finance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1193" y="160" />
+              <mxPoint x="1263" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="n1_eval" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n5_archive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="n5_archive" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n1_end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1438" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D7-sy222HQuw7boqXK6k-1" edge="1" parent="1" source="n1_create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n2_create" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255" y="145" as="sourcePoint" />
+            <mxPoint x="255" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
