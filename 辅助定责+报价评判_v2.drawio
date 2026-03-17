@@ -1,9 +1,377 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.3">
   <diagram name="第 1 页" id="9CJPzhLalbzqyMcGv_qS">
-    <mxGraphModel>
+    <mxGraphModel dx="2482" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lane1" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="商户端 (业务对象)" vertex="1">
+          <mxGeometry height="320" width="1800" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n_商户同意" parent="lane1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="是否同意并签字?" vertex="1">
+          <mxGeometry height="80" width="100" x="860" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n_付款_商户" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="当面付款" vertex="1">
+          <mxGeometry height="60" width="100" x="1310" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-15" edge="1" parent="lane1" source="n_商户报价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n_商户同意">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="800" />
+              <mxPoint x="745" y="800" />
+              <mxPoint x="745" y="170" />
+            </Array>
+            <mxPoint x="870.0000000000002" y="840.44" as="sourcePoint" />
+            <mxPoint x="821" y="119.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane2" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="工程师端 (现场动作)" vertex="1">
+          <mxGeometry height="320" width="1800" x="40" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n_start" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="到场应急排险" vertex="1">
+          <mxGeometry height="50" width="80" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n_排险" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="排险完成" vertex="1">
+          <mxGeometry height="60" width="100" x="160" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n_分流1" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="处理能力判断" vertex="1">
+          <mxGeometry height="80" width="100" x="290" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="n_BOM" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="Case 1: 提报故障&#xa;+所需物料工时表" vertex="1">
+          <mxGeometry height="60" width="110" x="454" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n_委外提报" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;" value="Case 2: 超出能力&#xa;申请委外大项" vertex="1">
+          <mxGeometry height="60" width="110" x="285" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n_退场1" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="确认&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;勘察费退场&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="90" x="160" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="n_完工_商户" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="维修完毕" vertex="1">
+          <mxGeometry height="60" width="90" x="1242" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_改BOM" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="修正BOM/改价" vertex="1">
+          <mxGeometry height="60" width="100" x="1010" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n_是否认可" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="认可AI评判？" vertex="1">
+          <mxGeometry height="80" width="100" x="1151" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n_申诉" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="不认可申诉&#xa;补充理由/照片" vertex="1">
+          <mxGeometry height="60" width="100" x="1310" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="n_修_物业" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="开始维修" vertex="1">
+          <mxGeometry height="60" width="100" x="1560" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n_接受改价" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="同意协商新价?" vertex="1">
+          <mxGeometry height="80" width="100" x="1470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="n_退场2" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="终止并退场" vertex="1">
+          <mxGeometry height="50" width="90" x="1670" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="lane2" source="n_分流1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_委外提报" value="Case 2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" value="   " vertex="1">
+          <mxGeometry height="320" width="1800" x="40" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="n_AI定责" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=2;" value="AI 智能定责&#xa;计算置信度" vertex="1">
+          <mxGeometry height="60" width="110" x="453" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n_定责分支" parent="lane3" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="定责结果" vertex="1">
+          <mxGeometry height="80" width="100" x="585" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_商户报价" parent="lane3" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=2;" value="AI生成对外报价单&#xa;&amp; 话术释义" vertex="1">
+          <mxGeometry height="60" width="110" x="880" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n_AI审价" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=2;" value="AI 辅助评判&#xa;工程师报价" vertex="1">
+          <mxGeometry height="60" width="110" x="880" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_审价分支" parent="lane3" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="是否合理？" vertex="1">
+          <mxGeometry height="80" width="100" x="1180" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="lane3" source="n_定责分支" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;exitX=0.491;exitY=-0.018;exitDx=0;exitDy=0;exitPerimeter=0;" target="n_AI审价" value="物业承担">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="634" y="60" />
+              <mxPoint x="860" y="60" />
+            </Array>
+            <mxPoint x="685.9264705882351" y="159.94117647058806" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="lane3" source="n_定责分支" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=-0.002;entryY=0.352;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="n_商户报价" value="商户承担">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="200" />
+              <mxPoint x="660" y="221" />
+            </Array>
+            <mxPoint x="685" y="210" as="sourcePoint" />
+            <mxPoint x="920" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane4" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" value="数字化底座" vertex="1">
+          <mxGeometry height="320" width="1800" x="40" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="n_委外账单" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="生成【勘察排险账单】" vertex="1">
+          <mxGeometry height="60" width="110" x="150" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="n_升项目" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="工单挂起，&lt;br&gt;工程项目(Project)录入" vertex="1">
+          <mxGeometry height="70" width="110" x="374" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n_排险账单" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="生成【勘察排险账单】" vertex="1">
+          <mxGeometry height="60" width="110" x="775" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="n_挂账" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="系统挂账&#xa;【应收账款】" vertex="1">
+          <mxGeometry height="70" width="110" x="960" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n_小于2000" parent="lane4" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="金额 &lt; 2000?&#xa;(系统校验规则)" vertex="1">
+          <mxGeometry height="80" width="110" x="1120" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n_升项目2" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="状态变为:&#xa;工程项目(Project)" vertex="1">
+          <mxGeometry height="70" width="110" x="1285" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n_状态异常" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="状态变为:&#xa;【异常待审批】" vertex="1">
+          <mxGeometry height="70" width="110" x="1120" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n_状态驳回" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="工单流转挂起:&#xa;【报价驳回】" vertex="1">
+          <mxGeometry height="70" width="110" x="1660" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_财务付款" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="财务付款&#xa;(垫资/结算)" vertex="1">
+          <mxGeometry height="70" width="110" x="55" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="lane4" source="n_排险账单" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=1;entryY=0.5;dashed=1;" target="n_财务付款">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="170" />
+              <mxPoint x="165" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-10" edge="1" parent="lane4" source="n_委外账单" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.532;entryY=0.271;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;curved=0;" target="n_财务付款">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="70" />
+              <mxPoint x="114" y="70" />
+              <mxPoint x="114" y="160" />
+              <mxPoint x="114" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane5" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="物业主管端 (人工决策)" vertex="1">
+          <mxGeometry height="320" width="1800" x="40" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="n_项目审批" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="主管审核确认，&lt;div&gt;项目录入供应商管理&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="285" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n_存疑" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="人工介入&#xa;定责判定分摊" vertex="1">
+          <mxGeometry height="60" width="110" x="580" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n_主管审批" parent="lane5" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#82b366;strokeWidth=2;" value="主管审批申诉" vertex="1">
+          <mxGeometry height="80" width="100" x="1125" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n_项目审批2" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="主管审核项目&#xa;录入供应商管理" vertex="1">
+          <mxGeometry height="60" width="110" x="1285" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_协商" parent="lane5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;strokeWidth=2;" value="改价/电话协商" vertex="1">
+          <mxGeometry height="60" width="100" x="1290" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="n_start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_排险">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="n_排险" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" target="n_分流1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="n_分流1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_BOM" value="Case 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="n_BOM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_AI定责">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="n_AI定责" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" target="n_定责分支">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="n_定责分支" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_存疑" value="存疑">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="n_商户同意" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="n_修_商户" value="是">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1185" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="n_修_商户" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_完工_商户">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="n_完工_商户" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="n_付款_商户">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1049" y="520.0666666666666" as="sourcePoint" />
+            <mxPoint x="1249" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="n_商户同意" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="n_拒修离场" value="否">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="370" />
+              <mxPoint x="1000" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="n_拒修离场" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n_排险账单">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="1270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="n_排险账单" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_挂账">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="n_AI审价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_审价分支">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="n_审价分支" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_小于2000" value="合理">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1071" y="640" />
+              <mxPoint x="1175" y="640" />
+              <mxPoint x="1175" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="n_小于2000" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_修_物业" value="是">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="580" />
+              <mxPoint x="1340" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="n_小于2000" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_升项目2" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="n_升项目2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_项目审批2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="n_审价分支" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_AI提示" value="否&lt;div&gt;&lt;br&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="n_拒修离场" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_是否认可">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="n_是否认可" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=1;entryY=0.5;" target="n_改BOM" value="认可">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="n_改BOM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_AI审价">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="380" />
+              <mxPoint x="955" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="n_是否认可" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_申诉" value="申诉">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="n_申诉" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_状态异常">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="n_状态异常" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_主管审批">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" edge="1" parent="1" source="n_主管审批" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_小于2000" value="申诉通过">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="870" />
+              <mxPoint x="1100" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e36" edge="1" parent="1" source="n_主管审批" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_状态驳回" value="直接驳回">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="1030" />
+              <mxPoint x="1660" y="1030" />
+              <mxPoint x="1660" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e37" edge="1" parent="1" source="n_状态驳回" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_退场2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1755" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="n_AI提示" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_协商" value="后台改价">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="800" />
+              <mxPoint x="1340" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e39" edge="1" parent="1" source="n_协商" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_接受改价">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1340" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e40" edge="1" parent="1" source="n_接受改价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_修_物业" value="接受">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e41" edge="1" parent="1" source="n_接受改价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_状态驳回" value="拒绝">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="180" />
+              <mxPoint x="1420" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-5" edge="1" parent="1" source="n_项目审批" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;curved=0;" target="n_委外账单">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="1620" />
+              <mxPoint x="320" y="1170" />
+              <mxPoint x="245" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-6" edge="1" parent="1" source="n_委外提报" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="n_项目审批">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-7" edge="1" parent="1" source="n_项目审批" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;curved=0;" target="n_升项目">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-11" edge="1" parent="1" source="n_委外账单" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=0;" target="n_退场1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="1225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_拒修离场" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;" value="商户拒修&#xa;仅排险离场" vertex="1">
+          <mxGeometry height="60" width="100" x="950" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="sWApIY7i4ldek3pW8zYc-13" edge="1" parent="1" source="n_主管审批" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_AI提示" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="870" />
+            </Array>
+            <mxPoint x="1240" y="1590" as="sourcePoint" />
+            <mxPoint x="1380" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_AI提示" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;strokeWidth=2;" value="AI 智能提示&#xa;告知不合理点" vertex="1">
+          <mxGeometry height="60" width="100" x="1335" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="n_修_商户" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="开始维修" vertex="1">
+          <mxGeometry height="60" width="90" x="1140" y="520" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
