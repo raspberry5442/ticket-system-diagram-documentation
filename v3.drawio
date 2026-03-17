@@ -1,91 +1,91 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.3">
   <diagram name="第 1 页" id="5qbmdYE2lmrijNGkVyJZ">
-    <mxGraphModel dx="5453" dy="2933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2727" dy="1467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="lane1" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="商户端 (业务对象)" vertex="1">
           <mxGeometry height="130" width="1850" x="40" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n_商户同意" parent="lane1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="是否同意并签字?" vertex="1">
+        <mxCell id="n_商户同意" parent="lane1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=light-dark(#b85450, #6d5100);strokeWidth=2;" value="是否同意并签字?" vertex="1">
           <mxGeometry height="80" width="100" x="580" y="25" as="geometry" />
         </mxCell>
-        <mxCell id="n_付款_商户" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="当面付款" vertex="1">
+        <mxCell id="n_付款_商户" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeWidth=2;strokeColor=light-dark(#b85450, #6d5100);" value="当面付款" vertex="1">
           <mxGeometry height="60" width="100" x="840" y="35" as="geometry" />
         </mxCell>
-        <mxCell id="lane2" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="工程师端 (现场动作)" vertex="1">
+        <mxCell id="lane2" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;swimlaneFillColor=none;strokeWidth=2;" value="工程师端 (现场动作)" vertex="1">
           <mxGeometry height="230" width="1850" x="40" y="170" as="geometry" />
         </mxCell>
-        <mxCell id="n_start" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="到场应急排险" vertex="1">
+        <mxCell id="n_start" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="到场应急排险" vertex="1">
           <mxGeometry height="50" width="80" x="50" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="n_排险" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="排险完成" vertex="1">
+        <mxCell id="n_排险" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="排险完成" vertex="1">
           <mxGeometry height="60" width="100" x="160" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="n_分流1" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="处理能力判断" vertex="1">
+        <mxCell id="n_分流1" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="处理能力判断" vertex="1">
           <mxGeometry height="80" width="100" x="290" y="55" as="geometry" />
         </mxCell>
-        <mxCell id="n_BOM" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="Case 1: 提报故障&#xa;+所需物料工时表" vertex="1">
+        <mxCell id="n_BOM" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="Case 1: 提报故障&#xa;+所需物料工时表" vertex="1">
           <mxGeometry height="60" width="110" x="430" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="n_委外提报" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;" value="Case 2: 超出能力&#xa;申请委外大项" vertex="1">
+        <mxCell id="n_委外提报" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="Case 2: 超出能力&#xa;申请委外大项" vertex="1">
           <mxGeometry height="60" width="110" x="285" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="n_退场1" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="领勘察费退场" vertex="1">
+        <mxCell id="n_退场1" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="领勘察费退场" vertex="1">
           <mxGeometry height="50" width="90" x="165" y="155" as="geometry" />
         </mxCell>
-        <mxCell id="n_修_商户" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="开始维修" vertex="1">
+        <mxCell id="n_修_商户" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="开始维修" vertex="1">
           <mxGeometry height="60" width="90" x="720" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="n_完工_商户" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="维修完毕" vertex="1">
+        <mxCell id="n_完工_商户" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="维修完毕" vertex="1">
           <mxGeometry height="60" width="90" x="845" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="n_拒修离场" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;" value="商户拒修&#xa;仅排险离场" vertex="1">
+        <mxCell id="n_拒修离场" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="商户拒修&#xa;仅排险离场" vertex="1">
           <mxGeometry height="60" width="100" x="715" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="n_改BOM" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="修正BOM/改价" vertex="1">
+        <mxCell id="n_改BOM" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="修正BOM/改价" vertex="1">
           <mxGeometry height="60" width="100" x="840" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="n_是否认可" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="认可AI评判？" vertex="1">
+        <mxCell id="n_是否认可" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="认可AI评判？" vertex="1">
           <mxGeometry height="80" width="100" x="980" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="n_申诉" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;" value="不认可申诉&#xa;补充理由/照片" vertex="1">
+        <mxCell id="n_申诉" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="不认可申诉&#xa;补充理由/照片" vertex="1">
           <mxGeometry height="60" width="100" x="1120" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="n_修_物业" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="开始维修" vertex="1">
+        <mxCell id="n_修_物业" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" value="开始维修" vertex="1">
           <mxGeometry height="60" width="100" x="1201" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="n_接受改价" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#d6b656;" value="同意协商新价?" vertex="1">
+        <mxCell id="n_接受改价" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="同意协商新价?" vertex="1">
           <mxGeometry height="80" width="100" x="1290" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="n_退场2" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="终止并退场" vertex="1">
+        <mxCell id="n_退场2" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="终止并退场" vertex="1">
           <mxGeometry height="50" width="90" x="1455" y="155" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="lane2" source="n_start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_排险">
+        <mxCell id="e1" edge="1" parent="lane2" source="n_start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_排险">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="lane2" source="n_排险" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" target="n_分流1">
+        <mxCell id="e2" edge="1" parent="lane2" source="n_排险" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_分流1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="lane2" source="n_分流1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;" target="n_委外提报" value="Case 2">
+        <mxCell id="e3" edge="1" parent="lane2" source="n_分流1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=0;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_委外提报" value="Case 2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="lane2" source="n_分流1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_BOM" value="Case 1">
+        <mxCell id="e9" edge="1" parent="lane2" source="n_分流1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_BOM" value="Case 1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e16" edge="1" parent="lane2" source="n_修_商户" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_完工_商户">
+        <mxCell id="e16" edge="1" parent="lane2" source="n_修_商户" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_完工_商户">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e30" edge="1" parent="lane2" source="n_是否认可" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=1;entryY=0.5;" target="n_改BOM" value="认可">
+        <mxCell id="e30" edge="1" parent="lane2" source="n_是否认可" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=1;entryY=0.5;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_改BOM" value="认可">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e32" edge="1" parent="lane2" source="n_是否认可" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_申诉" value="申诉">
+        <mxCell id="e32" edge="1" parent="lane2" source="n_是否认可" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_申诉" value="申诉">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e40" edge="1" parent="lane2" source="n_接受改价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;" target="n_修_物业" value="接受">
+        <mxCell id="e40" edge="1" parent="lane2" source="n_接受改价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0.5;entryY=1;strokeWidth=2;strokeColor=light-dark(#98b4e1, #ededed);" target="n_修_物业" value="接受">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-6" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="领勘察费退场" vertex="1">
+        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-6" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=light-dark(#98b4e1, #ededed);strokeWidth=2;" value="领勘察费退场" vertex="1">
           <mxGeometry height="50" width="90" x="590" y="155" as="geometry" />
         </mxCell>
         <mxCell id="lane3" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" value="AI 能力端 (智能大脑)" vertex="1">
@@ -127,7 +127,7 @@
         <mxCell id="lane4" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" value="数字化系统与财务 (刚性底座)" vertex="1">
           <mxGeometry height="230" width="1850" x="40" y="600" as="geometry" />
         </mxCell>
-        <mxCell id="n_委外账单" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="生成【勘察排险账单】" vertex="1">
+        <mxCell id="n_委外账单" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=2;strokeColor=#9673A6;" value="生成【勘察排险账单】" vertex="1">
           <mxGeometry height="60" width="110" x="285" y="30" as="geometry" />
         </mxCell>
         <mxCell id="n_财务付款" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="财务结算" vertex="1">
@@ -136,7 +136,7 @@
         <mxCell id="n_升项目" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="状态变为:&#xa;工程项目(Project)" vertex="1">
           <mxGeometry height="70" width="110" x="285" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="n_排险账单" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="生成【勘察排险账单】" vertex="1">
+        <mxCell id="n_排险账单" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=2;strokeColor=#9673A6;" value="生成【勘察排险账单】" vertex="1">
           <mxGeometry height="60" width="110" x="710" y="30" as="geometry" />
         </mxCell>
         <mxCell id="n_挂账" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="商户系统挂账&lt;br&gt;【应收账款】" vertex="1">
@@ -166,7 +166,7 @@
         <mxCell id="e26" edge="1" parent="lane4" source="n_小于2000" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;" target="n_升项目2" value="否">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-2" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="生成【勘察排险账单】" vertex="1">
+        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-2" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeColor=#9673A6;strokeWidth=2;" value="生成【勘察排险账单】" vertex="1">
           <mxGeometry height="60" width="110" x="1445" y="160" as="geometry" />
         </mxCell>
         <mxCell id="Eqn3_fHW-xLvMoXt78Zk-4" parent="lane4" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;strokeWidth=2;" value="财务结算)" vertex="1">
