@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.3">
   <diagram name="第 1 页" id="5qbmdYE2lmrijNGkVyJZ">
-    <mxGraphModel dx="942" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="232" dy="143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,14 +10,16 @@
         <mxCell id="n_商户同意" parent="lane1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=light-dark(#b85450, #6d5100);strokeWidth=2;" value="是否同意并签字?" vertex="1">
           <mxGeometry height="80" width="100" x="580" y="25" as="geometry" />
         </mxCell>
-        <mxCell id="n_付款_商户" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeWidth=2;strokeColor=light-dark(#b85450, #6d5100);" value="当面付款" vertex="1">
-          <mxGeometry height="60" width="100" x="1010" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-18" edge="1" parent="lane1" source="Eqn3_fHW-xLvMoXt78Zk-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" target="n_付款_商户">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-18" edge="1" parent="lane1" source="Eqn3_fHW-xLvMoXt78Zk-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" target="Eqn3_fHW-xLvMoXt78Zk-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="75" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Eqn3_fHW-xLvMoXt78Zk-16" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeWidth=2;strokeColor=light-dark(#b85450, #6d5100);" value="验收" vertex="1">
           <mxGeometry height="60" width="100" x="840" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-28" parent="lane1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=light-dark(#B85450,#EDEDED);strokeWidth=2;" value="当面付款" vertex="1">
+          <mxGeometry height="50" width="80" x="1020" y="50" as="geometry" />
         </mxCell>
         <mxCell id="lane2" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;swimlaneFillColor=none;strokeWidth=2;" value="工程师端 (现场动作)" vertex="1">
           <mxGeometry height="230" width="1850" x="40" y="170" as="geometry" />
@@ -190,6 +192,9 @@
         <mxCell id="Eqn3_fHW-xLvMoXt78Zk-11" edge="1" parent="lane4" source="Eqn3_fHW-xLvMoXt78Zk-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=0;dashed=1;" target="n_挂账">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-29" parent="lane4" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=light-dark(#9673A6,#EDEDED);strokeWidth=2;" value="fukuan" vertex="1">
+          <mxGeometry height="50" width="90" x="960" y="90" as="geometry" />
+        </mxCell>
         <mxCell id="lane5" parent="1" style="swimlane;horizontal=0;startSize=40;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="物业主管端 (人工决策)" vertex="1">
           <mxGeometry height="200" width="1850" x="40" y="830" as="geometry" />
         </mxCell>
@@ -354,10 +359,15 @@
         <mxCell id="Eqn3_fHW-xLvMoXt78Zk-21" edge="1" parent="1" source="n_修_物业" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="Eqn3_fHW-xLvMoXt78Zk-22">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1310" y="960" />
+              <mxPoint x="1310" y="628" />
+              <mxPoint x="1291" y="628" />
+              <mxPoint x="1291" y="960" />
             </Array>
             <mxPoint x="1291" y="990" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Eqn3_fHW-xLvMoXt78Zk-31" edge="1" parent="1" source="Eqn3_fHW-xLvMoXt78Zk-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=0;" target="Eqn3_fHW-xLvMoXt78Zk-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
